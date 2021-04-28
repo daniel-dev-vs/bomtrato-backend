@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>bomtrato_backend_data</RootNamespace>
   </PropertyGroup>
 
 </Project>
