@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace bomtrato.backend.models.entities
 {
-    public class ProcessoEntity
+    public class Processo
     {
-        public int ID { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
         public long NumeroProcesso { get; set; }
 
@@ -17,5 +21,9 @@ namespace bomtrato.backend.models.entities
         public String Reclamante { get; set; }
 
         public bool Aprovado { get; set; }
+
+        public int UsuarioId { get; set; }
+
+        public Usuario Usuario { get; set; }
     }
 }

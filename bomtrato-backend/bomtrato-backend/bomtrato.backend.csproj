@@ -3,7 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>bomtrato.backend</RootNamespace>
+    <AppDesignerFolder>properties</AppDesignerFolder>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\bomtrato-backend-data\bomtrato.backend.data.csproj" />
+    <ProjectReference Include="..\bomtrato-backend-domain\bomtrato.backend.service.csproj" />
+  </ItemGroup>
 
 
 </Project>

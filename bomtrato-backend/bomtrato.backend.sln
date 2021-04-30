@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend", "bomtrato-backend\bomtrato.backend.csproj", "{C115275E-7C08-425E-B435-5284E88995E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend.business", "bomtrato-backend-domain\bomtrato.backend.business.csproj", "{B3604303-0336-43D4-8F72-09840DCA9862}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend.service", "bomtrato-backend-domain\bomtrato.backend.service.csproj", "{B3604303-0336-43D4-8F72-09840DCA9862}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend.data", "bomtrato-backend-data\bomtrato.backend.data.csproj", "{3859CDD0-0B24-4BAB-94F7-943EA737FF41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bomtrato.backend.models", "bomtrato.backend.models\bomtrato.backend.models.csproj", "{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend.models", "bomtrato.backend.models\bomtrato.backend.models.csproj", "{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

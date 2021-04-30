@@ -1,3 +1,8 @@
+using bomtrato.backend.data;
+using bomtrato.backend.data.interfaces;
+using bomtrato.backend.data.repositories;
+using bomtrato.backend.service.Interfaces;
+using bomtrato.backend.service.services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +21,7 @@ namespace bomtrato.backend
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            
         }
 
         public IConfiguration Configuration { get; }
@@ -24,7 +29,15 @@ namespace bomtrato.backend
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<BomtratoContext>();
+            services.AddTransient<IProcessoService, ProcessoService>();
+            services.AddTransient<IProcessoRepository, ProcessoRepository>();
+            services.AddTransient<IPerfilRepository, PerfilRepository>();
+            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            
+
             services.AddControllers();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,5 +57,7 @@ namespace bomtrato.backend
                 endpoints.MapControllers();
             });
         }
+
+       
     }
 }
