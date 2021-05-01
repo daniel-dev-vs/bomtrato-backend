@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend", "bomtrato-backend\bomtrato.backend.csproj", "{C115275E-7C08-425E-B435-5284E88995E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend", "bomtrato-backend\Bomtrato.Backend.csproj", "{C115275E-7C08-425E-B435-5284E88995E1}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend.service", "bomtrato-backend-domain\bomtrato.backend.service.csproj", "{B3604303-0336-43D4-8F72-09840DCA9862}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Data", "bomtrato-backend-data\Bomtrato.Backend.Data.csproj", "{3859CDD0-0B24-4BAB-94F7-943EA737FF41}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend.data", "bomtrato-backend-data\bomtrato.backend.data.csproj", "{3859CDD0-0B24-4BAB-94F7-943EA737FF41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Models", "bomtrato.backend.models\Bomtrato.Backend.Models.csproj", "{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bomtrato.backend.models", "bomtrato.backend.models\bomtrato.backend.models.csproj", "{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Service", "bomtrato-backend-service\Bomtrato.Backend.Service.csproj", "{EE583CAC-7CE5-48CA-AF05-57D923A3A906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +21,6 @@ Global
 		{C115275E-7C08-425E-B435-5284E88995E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C115275E-7C08-425E-B435-5284E88995E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C115275E-7C08-425E-B435-5284E88995E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B3604303-0336-43D4-8F72-09840DCA9862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B3604303-0336-43D4-8F72-09840DCA9862}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B3604303-0336-43D4-8F72-09840DCA9862}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B3604303-0336-43D4-8F72-09840DCA9862}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3859CDD0-0B24-4BAB-94F7-943EA737FF41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3859CDD0-0B24-4BAB-94F7-943EA737FF41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3859CDD0-0B24-4BAB-94F7-943EA737FF41}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE583CAC-7CE5-48CA-AF05-57D923A3A906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE583CAC-7CE5-48CA-AF05-57D923A3A906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE583CAC-7CE5-48CA-AF05-57D923A3A906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE583CAC-7CE5-48CA-AF05-57D923A3A906}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

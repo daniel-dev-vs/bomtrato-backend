@@ -57,5 +57,15 @@ namespace bomtrato.backend.service.services
         {
             return Repository.SingleOrDefault(predicate);
         }
+
+        public int Save() 
+        {
+            return Repository.Save();
+        }
+
+        public void Update(T entidade)
+        {
+            Repository.Update(entidade);
+        }
     }
 }

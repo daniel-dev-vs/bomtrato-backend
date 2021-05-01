@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\bomtrato.backend.models\bomtrato.backend.models.csproj" />
+    <ProjectReference Include="..\bomtrato.backend.models\Bomtrato.Backend.Models.csproj" />
   </ItemGroup>
 
   <ItemGroup>

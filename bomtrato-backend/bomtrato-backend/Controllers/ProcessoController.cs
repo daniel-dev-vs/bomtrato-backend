@@ -22,37 +22,55 @@ namespace bomtrato.backend.controllers
 
         // GET: api/<ProcessoController>
         [HttpGet]
-        public IEnumerable<Processo> Get()
+        public ActionResult<IEnumerable<Processo>> Get()
         {
-            return Service.GetAll();
+            return Ok(Service.GetAll());
         }
 
         // GET api/<ProcessoController>/5
         [HttpGet("{id}")]
-        public Processo Get(int id)
+        public ActionResult<Processo> Get(int id)
         {
-            return Service.GetId(id);
+            return Ok(Service.GetId(id));
         }
 
         // POST api/<ProcessoController>
         [HttpPost]
-        public void Post([FromBody] Processo value)
+        public IActionResult Post([FromBody] Processo processo)
         {
-            Service.Add(value);
+            Service.Add(processo);
+            Service.Save();
+
+            return Ok();
         }
 
         // PUT api/<ProcessoController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] int value)
+        public IActionResult Put(int id, [FromBody]Processo processoRecebido)
         {
-            Processo processo = Service.GetId(value);
+            Processo processo = Service.GetId(id);
 
+            if (processo == null)
+                return NotFound();
+
+            processoRecebido.Id = id;
+           
+
+            Service.Update(processoRecebido);
+            Service.Save();
+
+            return Ok();
         }
 
         // DELETE api/<ProcessoController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public IActionResult Delete(int id)
         {
+            Processo processo = Service.GetId(id);
+            Service.Remove(processo);
+            Service.Save();
+
+            return Ok();
         }
     }
 }

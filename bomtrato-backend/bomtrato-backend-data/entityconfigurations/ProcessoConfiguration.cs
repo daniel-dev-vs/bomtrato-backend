@@ -16,7 +16,9 @@ namespace bomtrato.backend.data.EntityConfigurations
             builder.Property(p => p.Valor).HasPrecision(10, 2).IsRequired();
             builder.Property(p => p.Reclamante).IsRequired().HasMaxLength(50);
             builder.Property(p => p.Aprovado).IsRequired();
-            builder.HasOne<Usuario>(p => p.Usuario).WithMany(c => c.Processos).HasForeignKey(p => p.UsuarioId);
+            builder.HasOne<Usuario>(p => p.Usuario).WithMany(p => p.Processos).HasForeignKey(p => p.UsuarioId).IsRequired(false);
+           
+            
         
         }
     }

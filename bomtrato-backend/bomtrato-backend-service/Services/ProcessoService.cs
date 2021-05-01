@@ -31,9 +31,6 @@ namespace bomtrato.backend.service.services
             return Repository.GetProcessosPorUsuario(usuarioId);
         }
 
-        public int Update(int id) 
-        {
-            return Repository.Update(id);
-        }
+        
     }
 }

@@ -23,5 +23,9 @@ namespace bomtrato.backend.service.Interfaces
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entities);
 
+        void Update(T entidade);
+
+        int Save();
+
     }
 }

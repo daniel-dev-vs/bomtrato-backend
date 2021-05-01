@@ -22,8 +22,9 @@ namespace bomtrato.backend.models.entities
 
         public bool Aprovado { get; set; }
 
-        public int UsuarioId { get; set; }
+        public int? UsuarioId { get; set; }
 
         public Usuario Usuario { get; set; }
     }
 }
+

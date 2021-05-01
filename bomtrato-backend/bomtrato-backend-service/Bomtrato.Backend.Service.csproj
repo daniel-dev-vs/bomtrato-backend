@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\bomtrato-backend-data\bomtrato.backend.data.csproj" />
+    <ProjectReference Include="..\bomtrato-backend-data\Bomtrato.Backend.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -15,6 +15,6 @@ namespace bomtrato.backend.data.interfaces
 
         IEnumerable<Processo> GetProcessosPorUsuario(int usuarioId);
 
-        int Update(int id);
+        
     }
 }

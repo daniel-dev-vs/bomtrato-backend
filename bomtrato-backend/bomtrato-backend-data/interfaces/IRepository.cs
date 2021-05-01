@@ -20,6 +20,10 @@ namespace bomtrato.backend.data.interfaces
 
         void Remove(T entidade);
         void RemoveRange(IEnumerable<T> entidades);
+     
+        void Update(T entidade);
 
+        int Save();
     }
 }
+
