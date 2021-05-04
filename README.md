@@ -15,5 +15,5 @@ rode os comandos:
 Pronto o projeto está preparado para rodar corretamente.
 
 
-Para visualizar a documentação das apis acesse este link: http://localhost:<porta>/swagger/index.html
+Para visualizar a documentação das apis acesse este link: http://localhost:porta/swagger/index.html
 
