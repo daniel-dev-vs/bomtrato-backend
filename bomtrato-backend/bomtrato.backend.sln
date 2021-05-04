@@ -5,15 +5,15 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Models", "Bomtrato.Backend.Models\Bomtrato.Backend.Models.csproj", "{A173C799-1A6E-4E3B-910F-31D59F9D6FB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bomtrato.Backend.Data.Tests", "Bomtrato.Backend.Data.Tests\Bomtrato.Backend.Data.Tests.csproj", "{9B02902E-D43A-459B-86FC-4B105BC6A95E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Data.Tests", "Bomtrato.Backend.Data.Tests\Bomtrato.Backend.Data.Tests.csproj", "{9B02902E-D43A-459B-86FC-4B105BC6A95E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend", "Bomtrato.Backend\Bomtrato.Backend.csproj", "{0A01E9D3-628B-45D1-8B92-05AA3ADEB22A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.ServiceTest", "Bomtrato.Backend.ServiceTest\Bomtrato.Backend.ServiceTest.csproj", "{2B804FD4-8A42-4FFD-A5FB-2195EA796DA0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Data", "Bomtrato.Backend.Data\Bomtrato.Backend.Data.csproj", "{50AAAE59-EE95-4D58-AB18-FD8D82F7C6A3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Service", "Bomtrato.Backend.Service\Bomtrato.Backend.Service.csproj", "{431E342C-8A47-4D8C-AC3C-278D028A7DA3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bomtrato.Backend.Service.Tests", "Bomtrato.Backend.ServiceTest\Bomtrato.Backend.Service.Tests.csproj", "{630B790C-AB91-4C12-9276-DC16901532DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,6 @@ Global
 		{0A01E9D3-628B-45D1-8B92-05AA3ADEB22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A01E9D3-628B-45D1-8B92-05AA3ADEB22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A01E9D3-628B-45D1-8B92-05AA3ADEB22A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2B804FD4-8A42-4FFD-A5FB-2195EA796DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2B804FD4-8A42-4FFD-A5FB-2195EA796DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2B804FD4-8A42-4FFD-A5FB-2195EA796DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2B804FD4-8A42-4FFD-A5FB-2195EA796DA0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{50AAAE59-EE95-4D58-AB18-FD8D82F7C6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{50AAAE59-EE95-4D58-AB18-FD8D82F7C6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50AAAE59-EE95-4D58-AB18-FD8D82F7C6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,6 +41,10 @@ Global
 		{431E342C-8A47-4D8C-AC3C-278D028A7DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{431E342C-8A47-4D8C-AC3C-278D028A7DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{431E342C-8A47-4D8C-AC3C-278D028A7DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{630B790C-AB91-4C12-9276-DC16901532DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{630B790C-AB91-4C12-9276-DC16901532DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{630B790C-AB91-4C12-9276-DC16901532DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{630B790C-AB91-4C12-9276-DC16901532DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
