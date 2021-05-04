@@ -21,12 +21,12 @@ namespace Bomtrato.Backend.Data.Entities
         public double Valor { get; set; }
 
         [Required]
-        [RegularExpression(@"^[a-zA-Z ]+$")]
+        [RegularExpression("^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$")]
         [MaxLength(50)]
         public String Escritorio { get; set; }
 
         [Required]
-        [RegularExpression("^[a-zA-Z ]+$")]
+        [RegularExpression("^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$")]
         [MaxLength(100)]
         public String Reclamante { get; set; }
         
