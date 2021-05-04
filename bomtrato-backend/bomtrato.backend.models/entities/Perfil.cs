@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace bomtrato.backend.models.entities
+namespace Bomtrato.Backend.Data.Entities
 {
     public class Perfil
     {
@@ -13,8 +13,6 @@ namespace bomtrato.backend.models.entities
         public int Id { get; set; }
 
         public String Nome { get; set; }
-
-        public virtual ICollection<UsuarioPerfil> UsuariosPerfis { get; set; }
 
     }
 }

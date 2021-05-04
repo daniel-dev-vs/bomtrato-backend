@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace bomtrato.backend.models.entities
+namespace Bomtrato.Backend.Data.Entities
 {
     public class Processo
     {
@@ -12,15 +12,27 @@ namespace bomtrato.backend.models.entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [Required]
         public long NumeroProcesso { get; set; }
 
+        [Required]
+        [Range(30000, double.MaxValue)]
+       
         public double Valor { get; set; }
 
+        [Required]
+        [RegularExpression(@"^[a-zA-Z ]+$")]
+        [MaxLength(50)]
         public String Escritorio { get; set; }
 
+        [Required]
+        [RegularExpression("^[a-zA-Z ]+$")]
+        [MaxLength(100)]
         public String Reclamante { get; set; }
-
+        
         public bool Aprovado { get; set; }
+
+        public bool Ativo { get; set; }
 
         public int? UsuarioId { get; set; }
 

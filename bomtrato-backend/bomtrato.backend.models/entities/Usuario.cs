@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace bomtrato.backend.models.entities
+namespace Bomtrato.Backend.Data.Entities
 {
     public class Usuario
     {
@@ -12,11 +12,17 @@ namespace bomtrato.backend.models.entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public String Nome { get; set; }
+        [Required]
+        public string Nome { get; set; }
 
-        public String Senha { get; set; }
+        [Required]
+        public string Senha { get; set; }
 
-        public virtual ICollection<UsuarioPerfil> UsuariosPerfis { get; set; }
+        [Required]
+        public string Perfil { get; set; }
+
+        public string Token { get; set; }
+
         public virtual ICollection<Processo> Processos { get; set; }
     }
 }
